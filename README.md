@@ -14,7 +14,7 @@ Implement the DoublyCircularLinkedList class:
 **get_previous_next(index)** : If the index is valid, it returns a list of previous data and next data. If the index is valid it returns [-1].
 
 # Constraints
-0 >= data <= 9
+Data should be integer value.
 
 ## Sample Input - 1
 ```
