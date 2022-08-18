@@ -36,15 +36,18 @@ for specific_operation in input().split(','):
 input_data = input()
 data = []
 iteration_count = 0
-inner_list = []
+
 for item in input_data.split(', '):
+    inner_list = []
     if item.isnumeric():
         data.append(int(item))
     elif item.startswith('['):
-        for letter in item:
+        item = item[1:-1]
+        for letter in item.split(','):
             if letter.isnumeric():
                 inner_list.append(int(letter))
         data.append(inner_list)
+
 obj = DoublyCircularLinkedList()
 result = []
 for i in range(len(operations)):
